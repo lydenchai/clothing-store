@@ -1,0 +1,87 @@
+<div class="container">
+  <header class="sticky top-0 flex w-full flex-col">
+    <div class="flex h-[60px] w-full items-center justify-between bg-[#d3d3d3] px-[20%] sm:px-[2%] md:px-[5%]">
+      <div class="flex items-center">
+        <mat-icon>search</mat-icon>
+        <input type="text" class="border-none outline-none ms-3 bg-[#d3d3d3] text-[#535151]" placeholder="Search...">
+      </div>
+      <div class="flex items-center">
+        <mat-icon class="cursor-pointer">account_circle</mat-icon>
+        <div class="mx-3">
+          <a routerLink="/">Log IN</a>
+        </div>
+        <mat-icon class="cursor-pointer">shopping_bag</mat-icon>
+      </div>
+    </div>
+    <div class="flex h-[87px] w-full items-center justify-between bg-[#535151] px-[20%] sm:px-[2%] md:px-[5%]">
+      <div class="w-fit text-[24px] font-bold tracking-wide text-[#d3d3d3] sm:text-[14px] md:text-[18px]">
+        <a routerLink="/">PRETTY GAL</a>
+      </div>
+      <nav>
+        <ul class="flex items-center ">
+          <li
+            class="mx-[30px] text-[16px] font-medium text-[#e5e5e5] hover:text-[#66a8d4] sm:mx-[10px] md:mx-[20px] md:text-[14px]">
+            <a routerLink="/">Home</a>
+          </li>
+          <li
+            class="mx-[30px] text-[16px] font-medium text-[#e5e5e5] hover:text-[#66a8d4] sm:mx-[10px] md:mx-[20px] md:text-[14px]">
+            <a routerLink="/shop">Shop</a>
+          </li>
+          <li
+            class="mx-[30px] text-[16px] font-medium text-[#e5e5e5] hover:text-[#66a8d4] sm:mx-[10px] md:mx-[20px] md:text-[14px]">
+            <a routerLink="/sale">Sale</a>
+          </li>
+          <li
+            class="mx-[30px] text-[16px] font-medium text-[#e5e5e5] hover:text-[#66a8d4] sm:mx-[10px] md:mx-[20px] md:text-[14px]">
+            <a routerLink="/customer-care">Customer Care</a>
+          </li>
+          <li class="text-[16px] font-medium text-[#e5e5e5] hover:text-[#66a8d4] md:text-[14px]">
+            <a routerLink="/stockists">Stockists</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="content w-full">
+    <router-outlet></router-outlet>
+    <footer class="flex h-[268px] flex-col bg-[#303132] px-[25%] py-[30px] sm:px-[2%] md:px-[5%]">
+      <div class="mb-[50px] flex justify-between md:mb-0 md:flex-col">
+        <div class="flex flex-col items-center md:mb-[30px]">
+          <div class="mb-[20px] text-[16px] tracking-wide text-[#e5e5e5]">
+            STAY CONNECTED
+          </div>
+          <div class="flex w-full items-center justify-between">
+            <a routerLink="/"><img class="w-[20px] cursor-pointer" src="./assets/imgs/facebook-svgrepo-com.png"
+                alt=""></a>
+            <a routerLink="/"><img class="w-[20px] cursor-pointer" src="./assets/imgs/twitter-154-svgrepo-com.png"
+                alt=""> </a>
+            <a routerLink="/"><img class="w-[20px] cursor-pointer" src="./assets/imgs/pinterest-180-svgrepo-com.png"
+                alt=""> </a>
+            <a routerLink="/"><img class="w-[20px] cursor-pointer" src="./assets/imgs/instagram-svgrepo-com.png"
+                alt=""></a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:mb-[30px]">
+          <div class="mb-[20px] text-[16px] tracking-wide text-[#e5e5e5]">
+            BE OUR FRIEND
+          </div>
+          <form class="w-full">
+            <input type="text " class="mb-[10px] w-full h-[30px] px-2 bg-[#535151] text-[#ffffff]"
+              placeholder="Enter your email here*">
+            <button class="w-full h-[30px] hover:bg-white bg-[#c4c4c4] text-[303132]">Subscribe Now</button>
+          </form>
+        </div>
+        <div class="flex flex-col items-center md:mb-[30px]">
+          <div class="mb-[20px] text-[16px] tracking-wide text-[#e5e5e5]">
+            NEED ASSISTANCE?
+          </div>
+          <div class="text-[14px] tracking-wide text-[#e5e5e5] mb-[5px]">123-456-7890</div>
+          <div class="text-[14px] tracking-wide text-[#e5e5e5]">info@mysite.com</div>
+        </div>
+      </div>
+      <div class="flex w-full items-center justify-center text-[16px] tracking-wide text-[#e5e5e5]">
+        © 2035 by PRETTY GAL. Powered and secured by <a href="" class="ms-1 underline">Wix</a>
+      </div>
+    </footer>
+  </div>
+</div>
