@@ -1,0 +1,31 @@
+.image-container {
+  position: relative;
+}
+
+.text-box {
+  width: 550px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff7e;
+}
+
+.text-box button {
+  width: 212px;
+  height: 40px;
+  background-color: #303132;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
