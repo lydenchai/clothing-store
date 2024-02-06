@@ -29,3 +29,28 @@
     color: #000;
   }
 }
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@media all and (min-width: 37.5em) {
+  .card-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media all and (min-width: 56.25em) {
+  .card-item {
+    width: calc(33.3333% - 10px);
+  }
+}
+
+.card-body {
+  width: 100%;
+  background: #e7e3e0;
+}
